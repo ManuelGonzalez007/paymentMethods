@@ -11,7 +11,7 @@ Este proyecto es un sistema CRUD (create, read, update and delete) que gestiona 
 - **Ver Detalles**: Se puede ver una vista detallada de cada método de pago, que incluye todas sus características.
 
 - **Crear Nuevo Método de Pago**: Existe una funcionalidad para crear nuevos métodos de pago y agregarlos a la lista.
-(al hacer "mouseover" sobre el título de la tabla "Métodos de Pago", este se transforma en "Crear Método de Pago", lo que permite acceder a una ruta para crear un nuevo método de pago)
+(al hacer "mouseover" sobre el título de la tabla "Métodos de Pago", este se transforma en "Crear Método de Pago", lo que permite acceder un form para crear un nuevo método de pago)
 
 ## Ejecución del Proyecto
 
