@@ -1,27 +1,19 @@
-# CRUD
+# Proyecto de CRUD de Métodos de Pago
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
+Este proyecto es un sistema CRUD (Crear, Leer, Actualizar, Eliminar) que gestiona una lista de Métodos de Pago. Permite realizar las siguientes operaciones:
 
-## Development server
+- **Ver Todos los Métodos de Pago**: Se muestra una lista completa de todos los métodos de pago disponibles, incluyendo su nombre, descripción y estado.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Editar Métodos de Pago**: Cada elemento en la lista se puede editar para actualizar su información.
 
-## Code scaffolding
+- **Eliminar Métodos de Pago**: Los métodos de pago existentes se pueden eliminar si ya no son necesarios.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Ver Detalles**: Se puede ver una vista detallada de cada método de pago, que incluye todas sus características.
 
-## Build
+- **Crear Nuevo Método de Pago**: Existe una funcionalidad para crear nuevos métodos de pago y agregarlos a la lista.
+(al hacer "mouseover" sobre el título de la tabla "Métodos de Pago", este se transforma en "Crear Método de Pago", lo que permite acceder a una ruta para crear un nuevo método de pago)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Ejecución del Proyecto
 
-## Running unit tests
+Debido a un bloqueo de la API por parte del proveedor de Internet, he configurado un archivo `proxy.conf.json`. Para ejecutar la aplicación, debes realizar el comando npm start.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
