@@ -1,6 +1,6 @@
 # Proyecto de CRUD de Métodos de Pago
 
-Este proyecto es un sistema CRUD (Crear, Leer, Actualizar, Eliminar) que gestiona una lista de Métodos de Pago, gracias a requests que se realizan a una API externa. Permite realizar las siguientes operaciones:
+Este proyecto es un sistema CRUD (create, read, update and delete) que gestiona una lista de Métodos de Pago, gracias a requests que se realizan a una API externa. Permite realizar las siguientes operaciones:
 
 - **Ver Todos los Métodos de Pago**: Se muestra una lista completa de todos los métodos de pago disponibles, incluyendo su nombre, descripción y estado.
 
