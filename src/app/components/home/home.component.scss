@@ -1,0 +1,81 @@
+.container-payment-method {
+  display: flex;
+  text-align: left;
+  cursor: pointer;
+  background-color: #00aae4;
+  width: 12.5rem;
+  color: #ffff;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+i::before {
+  border-radius: 50%;
+  padding: 0.5625rem;
+}
+
+.edit-icon::before {
+  border: solid 0.1875rem #0000ff;
+}
+.view-icon::before {
+  border: solid 0.1875rem #008000;
+}
+.delete-icon::before {
+  border: solid 0.1875rem #f12500;
+}
+
+.status-active {
+  background-color: #a7ff51;
+}
+
+.status-inactive {
+  background-color: #f34600;
+}
+.status {
+  text-align: center;
+}
+
+table {
+  tbody {
+    font-size: 0.75rem;
+  }
+  tr {
+    font-size: 0.875rem;
+    font-family: monospace;
+    --bs-table-accent-bg: unset !important;
+  }
+  th {
+    box-shadow: unset !important;
+    width: 10%;
+
+    span {
+      padding: 0.1875rem 1rem;
+      border-radius: 0.6875rem;
+    }
+  }
+
+  .container-status {
+    text-align: center;
+  }
+}
+.container-arrows {
+  display: flex;
+  justify-content: end;
+  margin-top: 1.25rem;
+  color: #676767;
+  .left {
+    padding: 0.5rem 0.125rem;
+  }
+  .right {
+    padding: 0.5rem 0.125rem;
+  }
+}
+p {
+  margin-bottom: unset;
+}

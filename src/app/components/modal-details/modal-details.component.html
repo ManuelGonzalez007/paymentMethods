@@ -1,0 +1,16 @@
+<div class="modal">
+  <div class="modal-content">
+    <div class="close-modal">
+      <i (click)="closeModal()" class="fas fa-times"></i>
+    </div>
+    <ng-container *ngIf="paymentDetails$ | async as payment">
+      <div>ID: {{ payment.id }}</div>
+      <div>NAME: {{ payment.name }}</div>
+      <div>DESCRIPTION: {{ payment.description }}</div>
+      <div>ICONO: {{ payment.icono }}</div>
+      <div>STATUS ID: {{ payment.status_id }}</div>
+      <div>CREATED AT: {{ payment.created_at | date }}</div>
+      <div>UPDATED AT: {{ payment.updated_at | date }}</div>
+    </ng-container>
+  </div>
+</div>

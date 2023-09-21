@@ -1,0 +1,107 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-6-offset-lg-3">
+      <div class="card">
+        <div class="card body">
+          <div class="container-title">
+            <span>{{ title }}</span>
+          </div>
+          <form
+            [formGroup]="newPaymentMethodForm"
+            (ngSubmit)="createEditPaymentMethod()"
+          >
+            <div class="mb-3">
+              <input
+                formControlName="name"
+                class="form-control form-control-lg"
+                type="text"
+                placeholder="nombre"
+                maxlength="7"
+              />
+              <div
+                *ngIf="
+                  newPaymentMethodForm.get('name')?.hasError('required') &&
+                  newPaymentMethodForm.get('name')?.touched
+                "
+                class="text-danger"
+              >
+                <span>Este campo es <strong>obligatorio</strong></span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <input
+                formControlName="description"
+                class="form-control form-control-lg"
+                type="text"
+                placeholder="descripcion"
+              />
+              <div
+                *ngIf="
+                  newPaymentMethodForm
+                    .get('description')
+                    ?.hasError('required') &&
+                  newPaymentMethodForm.get('description')?.touched
+                "
+                class="text-danger"
+              >
+                <span>Este campo es <strong>obligatorio</strong></span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <input
+                formControlName="status_id"
+                class="form-control form-control-lg"
+                type="number"
+                min="1"
+                max="2"
+                placeholder="status_id (solo valores 1 o 2 son aceptados)"
+              />
+              <div
+                *ngIf="
+                  newPaymentMethodForm.get('status_id')?.hasError('required') &&
+                  newPaymentMethodForm.get('status_id')?.touched
+                "
+                class="text-danger"
+              >
+                <span>Este campo es <strong>obligatorio</strong></span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <input
+                formControlName="icono"
+                class="form-control form-control-lg"
+                type="text"
+                placeholder="icono"
+              />
+              <div
+                *ngIf="
+                  newPaymentMethodForm.get('icono')?.hasError('required') &&
+                  newPaymentMethodForm.get('icono')?.touched
+                "
+                class="text-danger"
+              >
+                <span>Este campo es <strong>obligatorio</strong></span>
+              </div>
+            </div>
+
+            <button
+              [disabled]="newPaymentMethodForm.invalid"
+              type="submit"
+              class="btn btn-success float-end"
+            >
+              {{ button }}
+            </button>
+
+            <button
+              type="button"
+              routerLink="/"
+              class="btn btn-primary float-start"
+            >
+              Volver
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+{
+  "/api/*": {
+    "target": "http://booking-api.bti-dev.tech",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
