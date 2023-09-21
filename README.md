@@ -17,3 +17,4 @@ Este proyecto es un sistema CRUD (Crear, Leer, Actualizar, Eliminar) que gestion
 
 Debido a un bloqueo de la API por parte del proveedor de Internet, he configurado un archivo `proxy.conf.json`. Para ejecutar la aplicación, debes realizar el comando npm start.
 
+## Realizada con Angular 14, bootstrap 5, ngx-toastr 14, rxjs 7.5
